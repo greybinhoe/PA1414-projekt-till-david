@@ -1,0 +1,14 @@
+	<form class="container"
+		#userForm = "ngForm"
+	(ngSubmit) = "onSubmit(userForm.value)">
+	<input type = "text" name="Company name" placeholder = "Company name" ngModel>
+	<br>
+	<input type = "text" name = "offer" placeholder = "special offer" ngModel>
+	<br>
+	<select name = "time for offer" ngModel>
+	<option value = "1 day">1 day</option>
+	<option value = "1 week">1 week</option>
+	<option value = "1 month">1 month</option>
+	</select>
+	<input type= "submit" value = "submit">
+</form>
